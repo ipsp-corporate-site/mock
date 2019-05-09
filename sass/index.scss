@@ -1,0 +1,186 @@
+// header要素
+header{
+  .logo_l {
+  width: 394px;
+  height: 40px;
+  margin: 12px auto auto 15px;
+  display: block;
+  }
+  
+  .logo_s {
+  width: 57.93px;
+  height: 25px;
+  margin: 21px auto auto 14px;
+  display: none;
+  }
+}
+
+.wrap{
+  .home {
+    height: 100vh;
+    margin-top: 82px;
+    
+    h1 {
+      height: 89;
+      width: 419px;
+      font-size: 80px;
+      margin:36px auto auto 200px;
+    }
+  }
+  
+  h3 {
+    font-size: 25px; 
+    margin:36px auto auto 193px;
+  }
+  
+  .arrow01 {
+    margin: 168px auto auto auto;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: solid 5px black;
+    border-right: solid 5px black;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(135deg);
+  }
+  
+  .arrow {
+    animation: fluffy 3s linear infinite;
+  }
+  
+  @keyframes fluffy {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(10px) }
+    50% { transform: translateY(20px) }
+    75% { transform: translateY(10px) }
+    100% { transform: translateY(0) }
+  }
+}
+//footer要素
+footer {
+  height: 392px;
+  background-color: #3B4043;
+  color: white;
+  
+  nav {
+    margin-left: 355px;
+    width: 150px;
+    display: inline-block;
+  }
+  
+  .outer {
+    height: 207;
+    padding-top: 46px;
+  }
+  
+  .fb-page {
+    margin-left: 96px;
+    display: inline-block;
+  }
+  
+  i {
+    list-style: none;
+    font-size: 15px;
+  }
+  
+  nav li:nth-of-type(1) {
+    width: 45px;
+    height: 21px;
+    margin-bottom: 22px;
+  }
+  
+  nav li:nth-of-type(2) {
+    width: 60px;
+    height: 21px;
+    margin-bottom: 25px;
+  }
+  
+  nav li:nth-of-type(3) {
+    width: 150px;
+    height: 21px;
+  }
+  
+  p {
+    margin-top: 81px;
+    margin-bottom: 36px;
+    text-align: center ;
+  }
+}
+@media screen and (max-width:769px){
+  header {
+    .logo_l {
+      display: none;
+    }
+    .logo_s {
+      display: block;
+    }
+  }
+  
+  .wrap {
+    .home {
+      margin-top: 69px;
+      
+      h1 {
+        font-size: 40px;
+        margin: 45px auto auto auto;
+      }
+      
+      h1:nth-of-type(1) {
+        width: 203px;
+        height: 40px;
+      }
+      
+       h1:nth-of-type(2) {
+        width: 203px;
+        height: 47px;
+      }
+      
+       h1:nth-of-type(3) {
+        width: 206px;
+        height: 50px;
+      }
+      
+      h3 {
+        width: 245px;
+        height: 21px;
+        font-size: 16px;
+        margin: 35px auto auto auto;
+      }
+    }
+  }
+  
+  footer {
+     height: 567.11px;
+     width: 100vw;
+     
+     .outer {
+       width: 100vw;
+       height: 518px;
+     }
+     
+     footer .fb-page {
+       display: block;
+       width: 325p;
+       height: 432px;
+     }
+     
+     nav {
+       display: block;
+       
+       li:nth-of-type(1) {
+         display: none;
+       }
+       
+       li{
+         font-size: 15px;
+       }
+     }
+    
+    p {
+      font-size: 14px;
+      width: 303px;
+      height: 22px;
+      margin: 25px auto auto auto;
+    }
+  }
+}

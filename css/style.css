@@ -1,40 +1,49 @@
-header .logo_l {
-  width: 394px;
-  height: 40px;
-  margin: 12px auto auto 15px;
-  display: block; }
-
-header .logo_s {
-  width: 57.93px;
-  height: 25px;
-  margin: 21px auto auto 14px;
-  display: none; }
-
-.wrap .home {
-  height: 100vh;
-  margin-top: 82px; }
-  .wrap .home h1 {
-    height: 89;
-    width: 419px;
-    font-size: 80px;
-    margin: 36px auto auto 200px; }
-
-.wrap h3 {
-  font-size: 25px;
-  margin: 36px auto auto 193px; }
-
-.wrap .arrow01 {
-  margin: 168px auto auto auto;
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-top: solid 5px black;
-  border-right: solid 5px black;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(135deg); }
-
-.wrap .arrow {
-  animation: fluffy 3s linear infinite; }
+html {
+  font-size: 62.5%; }
+  html header .logo_l {
+    width: 394px;
+    height: 40px;
+    margin: 12px auto auto 15px; }
+  html header .logo_s {
+    width: 57.93px;
+    height: 25px;
+    margin: 21px auto auto 14px;
+    display: none; }
+  html .wrap {
+    height: 100vh;
+    background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
+    background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: gray; }
+    html .wrap .home {
+      margin-top: 82px; }
+      html .wrap .home h1 {
+        height: 89;
+        width: 419px;
+        font-size: 8rem;
+        margin: 36px auto auto 200px; }
+      html .wrap .home h3 {
+        font-size: 2.5rem;
+        margin: 36px auto auto 193px; }
+    html .wrap .arrow {
+      animation: fluffy 3s linear infinite;
+      display: block;
+      margin-bottom: 40px; }
+      html .wrap .arrow .arrow01 {
+        margin: 168px auto auto auto;
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-top: solid 5px black;
+        border-right: solid 5px black;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(135deg); }
+      html .wrap .arrow .video_frame {
+        height: 1500px; }
+      html .wrap .arrow .video {
+        text-align: center; }
 
 @keyframes fluffy {
   0% {
@@ -47,82 +56,92 @@ header .logo_s {
     transform: translateY(10px); }
   100% {
     transform: translateY(0); } }
-
-footer {
-  height: 392px;
-  background-color: #3B4043;
-  color: white; }
-  footer nav {
-    margin-left: 355px;
-    width: 150px;
-    display: inline-block; }
-  footer .outer {
-    height: 207;
-    padding-top: 46px; }
-  footer .fb-page {
-    margin-left: 96px;
-    display: inline-block; }
-  footer i {
-    list-style: none;
-    font-size: 15px; }
-  footer nav li:nth-of-type(1) {
-    width: 45px;
-    height: 21px;
-    margin-bottom: 22px; }
-  footer nav li:nth-of-type(2) {
-    width: 60px;
-    height: 21px;
-    margin-bottom: 25px; }
-  footer nav li:nth-of-type(3) {
-    width: 150px;
-    height: 21px; }
-  footer p {
-    margin-top: 81px;
-    margin-bottom: 36px;
-    text-align: center; }
-
-@media screen and (max-width: 769px) {
-  header .logo_l {
-    display: none; }
-  header .logo_s {
-    display: block; }
-  .wrap .home {
-    margin-top: 69px; }
-    .wrap .home h1 {
-      font-size: 40px;
-      margin: 45px auto auto auto; }
-    .wrap .home h1:nth-of-type(1) {
-      width: 203px;
-      height: 40px; }
-    .wrap .home h1:nth-of-type(2) {
-      width: 203px;
-      height: 47px; }
-    .wrap .home h1:nth-of-type(3) {
-      width: 206px;
-      height: 50px; }
-    .wrap .home h3 {
-      width: 245px;
-      height: 21px;
-      font-size: 16px;
-      margin: 35px auto auto auto; }
-  footer {
-    height: 567.11px;
-    width: 100vw; }
-    footer .outer {
-      width: 100vw;
-      height: 518px; }
-    footer footer .fb-page {
-      display: block;
-      width: 325p;
-      height: 432px; }
-    footer nav {
+  html footer {
+    margin-top: 144.89px;
+    height: 420px;
+    background-color: #3B4043;
+    color: white; }
+    html footer .outer {
+      padding-top: 46px;
+      margin: 0 auto auto auto;
+      height: 300px;
+      width: 800px; }
+      html footer .outer .fb-page {
+        display: block;
+        width: 361px;
+        float: right; }
+      html footer .outer nav {
+        bottom: 83px;
+        width: 150px;
+        display: block;
+        float: left; }
+        html footer .outer nav li {
+          list-style: none;
+          font-size: 1.5rem; }
+        html footer .outer nav li:nth-of-type(1) {
+          width: 45px;
+          height: 21px;
+          margin-bottom: 22px; }
+        html footer .outer nav li:nth-of-type(2) {
+          width: 60px;
+          height: 21px;
+          margin-bottom: 25px; }
+        html footer .outer nav li:nth-of-type(3) {
+          width: 150px;
+          height: 21px; }
+    html footer p {
+      font-size: 1.8rem;
+      margin-top: 81px;
+      margin-bottom: 36px;
+      text-align: center; }
+  @media screen and (max-width: 768px) {
+    html header .logo_l {
+      display: none; }
+    html header .logo_s {
       display: block; }
-      footer nav li:nth-of-type(1) {
-        display: none; }
-      footer nav li {
-        font-size: 15px; }
-    footer p {
-      font-size: 14px;
-      width: 303px;
-      height: 22px;
-      margin: 25px auto auto auto; } }
+    html .wrap .home {
+      margin-top: 69px; }
+      html .wrap .home h1 {
+        font-size: 4rem;
+        margin: 45px auto auto auto; }
+      html .wrap .home h1:nth-of-type(1) {
+        width: 203px;
+        height: 40px; }
+      html .wrap .home h1:nth-of-type(2) {
+        width: 203px;
+        height: 47px; }
+      html .wrap .home h1:nth-of-type(3) {
+        width: 206px;
+        height: 50px; }
+      html .wrap .home h3 {
+        width: 245px;
+        height: 21px;
+        font-size: 1.6rem;
+        margin: 35px auto auto auto; }
+    html footer {
+      height: 600px;
+      width: 100vw; }
+      html footer .outer {
+        width: 350px;
+        height: 518px;
+        margin-right: auto;
+        margin-left: auto; }
+        html footer .outer .fb-page {
+          display: block;
+          width: 325px;
+          height: 432px;
+          float: none;
+          margin-right: auto;
+          margin-left: auto; }
+        html footer .outer nav {
+          display: block;
+          float: none; }
+          html footer .outer nav li:nth-of-type(1) {
+            display: none; }
+          html footer .outer nav li {
+            font-size: 1.5rem; }
+      html footer p {
+        font-size: 1.4rem;
+        width: 303px;
+        height: 22px;
+        margin: 40px auto 10px auto; } }

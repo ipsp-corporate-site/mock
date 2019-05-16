@@ -2,11 +2,13 @@ html {
   font-size: 62.5%;
 
   header {
+    position: relative;
+    z-index: 1;
+    
     .logo_l {
       width: 394px;
       height: 40px;
       margin: 12px auto auto 15px;
-     
     }
 
     .logo_s {
@@ -19,26 +21,40 @@ html {
 
   .wrap {
     height: 100vh;
+    width: 100vw;
     background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
     background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     background-size: cover;
     background-color: gray;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    
+    .container {
+      margin-left: 0;
+    }
     
     .home {
-      margin-top: 82px;
+      padding-top: 82px;
 
       h1 {
         height: 89;
         width: 419px;
         font-size: 8rem;
         margin:36px auto auto 200px;
+        @media screen and (min-width: 769px) and (max-width: 970px) {
+          margin-left: 100px;
+        }
       }
 
       h3 {
         font-size: 2.5rem; 
         margin:36px auto auto 193px;
+        @media screen and (min-width: 769px) and (max-width: 970px) {
+          margin-left: 100px;
+        }
       }
     }
 
@@ -48,7 +64,7 @@ html {
       margin-bottom: 40px;
       
       .arrow01 {
-        margin: 168px auto auto auto;
+        margin: auto auto auto auto;
         display: block;
         width: 25px;
         height: 25px;
@@ -56,14 +72,6 @@ html {
         border-right: solid 5px black;
         -webkit-transform: rotate(45deg);
         transform: rotate(135deg);
-      }
-      
-      .video_frame {
-        height: 1500px;
-      }
-      
-      .video {
-        text-align: center;
       }
     }
 
@@ -75,6 +83,16 @@ html {
       100% { transform: translateY(0) }
     }
   }
+  
+  .video_frame {
+    margin-top: 100vh;
+    
+    .video {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   //footer要素
   footer {
     margin-top: 144.89px;
@@ -83,7 +101,6 @@ html {
     color: white;
 
     .outer {
-      
       padding-top: 46px;
       margin: 0 auto auto auto;
       height: 300px;
@@ -92,6 +109,7 @@ html {
       .fb-page {
         display: block;
         width: 361px;
+        height: 207px;
         float: right;
       }
       
@@ -204,6 +222,7 @@ html {
 
            li{
              font-size: 1.5rem;
+             float: left;
            }
          }
       }

@@ -1,38 +1,53 @@
 html {
   font-size: 62.5%; }
-  html header .logo_l {
-    width: 394px;
-    height: 40px;
-    margin: 12px auto auto 15px; }
-  html header .logo_s {
-    width: 57.93px;
-    height: 25px;
-    margin: 21px auto auto 14px;
-    display: none; }
+  html header {
+    position: relative;
+    z-index: 1; }
+    html header .logo_l {
+      width: 394px;
+      height: 40px;
+      margin: 12px auto auto 15px; }
+    html header .logo_s {
+      width: 57.93px;
+      height: 25px;
+      margin: 21px auto auto 14px;
+      display: none; }
   html .wrap {
     height: 100vh;
+    width: 100vw;
     background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
     background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     background-size: cover;
-    background-color: gray; }
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    z-index: 0; }
+    html .wrap .container {
+      margin-left: 0; }
     html .wrap .home {
-      margin-top: 82px; }
+      padding-top: 82px; }
       html .wrap .home h1 {
         height: 89;
         width: 419px;
         font-size: 8rem;
         margin: 36px auto auto 200px; }
+        @media screen and (min-width: 769px) and (max-width: 970px) {
+          html .wrap .home h1 {
+            margin-left: 100px; } }
       html .wrap .home h3 {
         font-size: 2.5rem;
         margin: 36px auto auto 193px; }
+        @media screen and (min-width: 769px) and (max-width: 970px) {
+          html .wrap .home h3 {
+            margin-left: 100px; } }
     html .wrap .arrow {
       animation: fluffy 3s linear infinite;
       display: block;
       margin-bottom: 40px; }
       html .wrap .arrow .arrow01 {
-        margin: 168px auto auto auto;
+        margin: auto auto auto auto;
         display: block;
         width: 25px;
         height: 25px;
@@ -40,10 +55,6 @@ html {
         border-right: solid 5px black;
         -webkit-transform: rotate(45deg);
         transform: rotate(135deg); }
-      html .wrap .arrow .video_frame {
-        height: 1500px; }
-      html .wrap .arrow .video {
-        text-align: center; }
 
 @keyframes fluffy {
   0% {
@@ -56,6 +67,12 @@ html {
     transform: translateY(10px); }
   100% {
     transform: translateY(0); } }
+  html .video_frame {
+    margin-top: 100vh; }
+    html .video_frame .video {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
   html footer {
     margin-top: 144.89px;
     height: 420px;
@@ -69,6 +86,7 @@ html {
       html footer .outer .fb-page {
         display: block;
         width: 361px;
+        height: 207px;
         float: right; }
       html footer .outer nav {
         bottom: 83px;
@@ -118,6 +136,8 @@ html {
         height: 21px;
         font-size: 1.6rem;
         margin: 35px auto auto auto; }
+    html .wrap .video {
+      width: 80vw; }
     html footer {
       height: 600px;
       width: 100vw; }

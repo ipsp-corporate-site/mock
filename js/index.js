@@ -1,15 +1,14 @@
 $(function(){
 	$(".btn-gnavi").on("click", function(){
-		var rightVal = 0;
-		if($(this).hasClass("open")) {
-			rightVal = -300;
-			$(this).removeClass("open");
+		if($(this).hasClass("btn-open")) {
+			$(this).removeClass("btn-open");
 		} else {
-			$(this).addClass("open");
+			$(this).addClass("btn-open");
 		}
-
-		$("#global-navi").stop().animate({
-			right: rightVal
-		}, 200);
+      if($(".global-navi").hasClass("nav-open")){
+          $(this).removeClass("nav-open");
+        } else {
+          $(this).addClass("nav-open");
+        }
 	});
 });

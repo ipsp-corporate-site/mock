@@ -1,9 +1,11 @@
 html {
   font-size: 62.5%; }
   html header {
-    position: relative;
-    z-index: 1;
-    height: 75px; }
+    position: absolute;
+    top: 0;
+    height: 75px;
+    z-index: 2;
+    width: 100%; }
     html header .logo_l {
       width: 394px;
       height: 40px;
@@ -35,21 +37,22 @@ html {
     background-position: left center;
     background-size: cover;
     background-color: gray;
-    position: absolute;
-    top: 0;
-    z-index: 0; }
+    position: relative;
+    top: 0; }
     html .wrap .container {
       margin-left: 0; }
     html .wrap .home {
       padding-top: 82px; }
       html .wrap .home h1 {
-        height: 89;
-        width: 419px;
-        font-size: 8rem;
-        margin: 36px auto auto 200px; }
-        @media screen and (min-width: 769px) and (max-width: 970px) {
-          html .wrap .home h1 {
-            margin-left: 100px; } }
+        font-size: 8rem; }
+        html .wrap .home h1 span {
+          display: block;
+          height: 89px;
+          width: 419px;
+          margin: 36px auto auto 200px; }
+          @media screen and (min-width: 769px) and (max-width: 970px) {
+            html .wrap .home h1 span {
+              margin-left: 100px; } }
       html .wrap .home h3 {
         font-size: 2.5rem;
         margin: 36px auto auto 193px; }
@@ -59,9 +62,14 @@ html {
     html .wrap .arrow {
       animation: fluffy 3s linear infinite;
       display: block;
-      margin-bottom: 40px; }
+      width: 30px;
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto; }
       html .wrap .arrow .arrow01 {
-        margin: auto auto auto auto;
         display: block;
         width: 25px;
         height: 25px;
@@ -138,77 +146,27 @@ html {
     html header .logo_s {
       display: block; }
     html header nav {
-      float: none;
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 200px;
-      height: 100%;
-      margin-top: 0;
-      padding-top: 50px;
-      background: rgba(33, 33, 33, 0.9);
-      font-size: 16px;
-      box-sizing: border-box;
-      z-index: 2; }
-      html header nav ul li {
-        padding: 20px 28px;
-        float: none; }
-        html header nav ul li a {
-          text-decoration: none;
-          color: #ddd; }
+      display: block; }
+      html header nav li {
+        float: none;
+        margin-top: 5px; }
     html header .btn-gnavi {
-      display: block;
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      width: 30px;
-      height: 24px;
-      z-index: 3;
-      box-sizing: border-box;
-      cursor: pointer;
-      -webkit-transition: all 400ms;
-      transition: all 400ms; }
-      html header .btn-gnavi span {
-        position: absolute;
-        width: 30px;
-        height: 4px;
-        background: #666;
-        border-radius: 10px;
-        -webkit-transition: all 400ms;
-        transition: all 400ms; }
-      html header .btn-gnavi span:nth-child(1) {
-        top: 0; }
-      html header .btn-gnavi span:nth-child(2) {
-        top: 10px; }
-      html header .btn-gnavi span:nth-child(3) {
-        top: 20px; }
-    html header .btn-gnavi.open {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg); }
-      html header .btn-gnavi.open span {
-        background: #fff; }
-      html header .btn-gnavi.open span:nth-child(1) {
-        width: 24px;
-        -webkit-transform: translate(-7px, 17px) rotate(45deg);
-        transform: translate(-7px, 17px) rotate(45deg); }
-      html header .btn-gnavi.open span:nth-child(3) {
-        width: 24px;
-        -webkit-transform: translate(-7px, -17px) rotate(-45deg);
-        transform: translate(-7px, -17px) rotate(-45deg); }
+      background-color: black; }
     html .wrap .home {
       margin-top: 69px; }
       html .wrap .home h1 {
-        font-size: 4rem;
-        margin: 45px auto auto auto; }
-      html .wrap .home h1:nth-of-type(1) {
-        width: 203px;
-        height: 40px; }
-      html .wrap .home h1:nth-of-type(2) {
-        width: 203px;
-        height: 47px; }
-      html .wrap .home h1:nth-of-type(3) {
-        width: 206px;
-        height: 50px; }
+        font-size: 4rem; }
+        html .wrap .home h1 span {
+          margin: 45px auto auto auto; }
+        html .wrap .home h1 span:nth-of-type(1) {
+          width: 203px;
+          height: 40px; }
+        html .wrap .home h1 span:nth-of-type(2) {
+          width: 203px;
+          height: 40px; }
+        html .wrap .home h1 span:nth-of-type(3) {
+          width: 206px;
+          height: 50px; }
       html .wrap .home h3 {
         width: 245px;
         height: 21px;

@@ -2,7 +2,6 @@ html {
   font-size: 62.5%; }
   html header {
     position: absolute;
-    top: 0;
     height: 75px;
     z-index: 2;
     width: 100%; }
@@ -45,6 +44,9 @@ html {
       padding-top: 82px; }
       html .wrap .home h1 {
         font-size: 8rem; }
+        @media screen and (max-width: 1000px) {
+          html .wrap .home h1 {
+            font-size: 6rem; } }
         html .wrap .home h1 span {
           display: block;
           height: 89px;
@@ -90,22 +92,20 @@ html {
   100% {
     transform: translateY(0); } }
   html .video_frame {
-    margin-top: 100vh; }
+    margin-top: 20vh; }
     html .video_frame .video {
       display: block;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      width: 100vw;
+      height: 70vh; }
       @media screen and (min-width: 780px) {
         html .video_frame .video {
           width: 780px;
           height: 500px; } }
-      @media screen and (max-width: 719px) {
-        html .video_frame .video {
-          width: 100vw;
-          height: 70vh; } }
   html footer {
     margin-top: 144.89px;
-    height: 420px;
+    height: 450px;
     background-color: #3B4043;
     color: white; }
     html footer .outer {
@@ -116,7 +116,9 @@ html {
       html footer .outer .fb-page {
         display: block;
         width: 361px;
-        float: right; }
+        float: right;
+        height: 207px;
+        overflow: scroll; }
       html footer .outer nav {
         margin-bottom: 83px;
         display: block;
@@ -145,33 +147,82 @@ html {
       display: none; }
     html header .logo_s {
       display: block; }
-    html header nav {
-      display: block; }
-      html header nav li {
-        float: none;
-        margin-top: 5px; }
     html header .btn-gnavi {
-      background-color: black; }
-    html .wrap .home {
-      margin-top: 69px; }
-      html .wrap .home h1 {
-        font-size: 4rem; }
-        html .wrap .home h1 span {
-          margin: 45px auto auto auto; }
-        html .wrap .home h1 span:nth-of-type(1) {
-          width: 203px;
-          height: 40px; }
-        html .wrap .home h1 span:nth-of-type(2) {
-          width: 203px;
-          height: 40px; }
-        html .wrap .home h1 span:nth-of-type(3) {
-          width: 206px;
-          height: 50px; }
-      html .wrap .home h3 {
-        width: 245px;
-        height: 21px;
-        font-size: 1.6rem;
-        margin: 35px auto auto auto; }
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 24px;
+      z-index: 3;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-transition: all 400ms;
+      transition: all 400ms; }
+      html header .btn-gnavi span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms; }
+      html header .btn-gnavi span:nth-child(1) {
+        top: 0; }
+      html header .btn-gnavi span:nth-child(2) {
+        top: 10px; }
+      html header .btn-gnavi span:nth-child(3) {
+        top: 20px; }
+    html header .btn-gnavi.btn-open {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+      html header .btn-gnavi.btn-open span {
+        background: #fff; }
+    html header .btn-gnavi.btn-open span:nth-child(1) {
+      width: 24px;
+      -webkit-transform: translate(-7px, 17px) rotate(45deg);
+      transform: translate(-7px, 17px) rotate(45deg); }
+    html header .btn-gnavi.btn-open span:nth-child(3) {
+      width: 24px;
+      -webkit-transform: translate(-7px, -17px) rotate(-45deg);
+      transform: translate(-7px, -17px) rotate(-45deg); }
+    html header nav {
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100%;
+      padding-top: 50px;
+      background: rgba(33, 33, 33, 0.9);
+      font-size: 16px;
+      box-sizing: border-box;
+      z-index: 2; }
+      html header nav ul li {
+        padding: 20px 28px; }
+        html header nav ul li a {
+          text-decoration: none;
+          color: #ddd; }
+    html header nav .nav-open {
+      position: fixed;
+      right: 0; }
+    html .wrap .home h1 {
+      font-size: 4rem; }
+      html .wrap .home h1 span {
+        margin: 45px auto auto auto; }
+      html .wrap .home h1 span:nth-of-type(1) {
+        width: 203px;
+        height: 40px; }
+      html .wrap .home h1 span:nth-of-type(2) {
+        width: 203px;
+        height: 40px; }
+      html .wrap .home h1 span:nth-of-type(3) {
+        width: 206px;
+        height: 50px; }
+    html .wrap .home h3 {
+      width: 245px;
+      height: 21px;
+      font-size: 1.6rem;
+      margin: 35px auto auto auto; }
     html footer {
       height: 600px;
       width: 100vw; }
@@ -189,6 +240,7 @@ html {
           margin-left: auto; }
         html footer .outer nav {
           margin-top: 25px;
+          margin-bottom: 0;
           display: block;
           float: none; }
           html footer .outer nav li:nth-of-type(1) {

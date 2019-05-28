@@ -202,7 +202,7 @@ html {
         html header nav ul li a {
           text-decoration: none;
           color: #ddd; }
-    html header nav .nav-open {
+    html header nav.nav-open {
       position: fixed;
       right: 0; }
     html .wrap .home h1 {

@@ -64,7 +64,7 @@ html {
       h1 {
         font-size: 8rem;
         
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1000gpx) {
           font-size: 6rem;
       }
         
@@ -207,7 +207,7 @@ html {
       
       .btn-gnavi {
         display: block;
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 20px;
         width: 30px;
@@ -263,19 +263,19 @@ html {
       }
       
       nav {
-        position: fixed;
-        top: 0;
+        position: absolute;
+        padding-top: 40px;
+        top: -25px;
         right: -200px;
         width: 200px;
-        height: 100%;
-        padding-top: 50px;
+        height: 100vh;
         background: rgba(33,33,33,.9);
         font-size: 16px;
         box-sizing: border-box;
         z-index: 2;
         
         ul li {
-          padding: 20px 28px;
+          padding: 20px 5px;
           
           a {
             text-decoration: none;
@@ -284,8 +284,7 @@ html {
         }
       }
       
-      nav .nav-open {
-        position: fixed;
+      nav.nav-open {
         right: 0;
       }
     }

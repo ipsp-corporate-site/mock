@@ -43,6 +43,7 @@ html {
   }
 
   .wrap {
+    min-height: 500px;
     height: 100vh;
     width: 100vw;
     background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
@@ -195,15 +196,43 @@ html {
       text-align: center;
     }
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:855px) {
+    .wrap {
+      .home {
+        h1 {
+          font-size: 4rem;
+          
+          span {
+            margin: 45px auto auto auto;
+          }
+          
+          span:nth-of-type(1) {
+            width: 203px;
+            height: 40px;
+          }
+          
+          span:nth-of-type(2) {
+            width: 203px;
+            height: 40px;
+          }
+          
+          span:nth-of-type(3) {
+            width: 206px;
+            height: 50px;
+          }
+        }
+
+        h3 {
+          width: 245px;
+          height: 21px;
+          font-size: 1.6rem;
+          margin: 35px auto auto auto;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:787px) {
     header {
-      .logo_l {
-        display: none;
-      }
-      .logo_s {
-        display: block;
-      }
-      
       .btn-gnavi {
         display: block;
         position: absolute;
@@ -262,12 +291,14 @@ html {
       }
       
       nav {
+        display: none;
         position: absolute;
         padding-top: 40px;
         top: -25px;
-        right: -200px;
+        right: 0;
         width: 200px;
         height: 100vh;
+        min-height: 500px;
         background: rgba(33,33,33,.9);
         font-size: 16px;
         box-sizing: border-box;
@@ -284,42 +315,17 @@ html {
       }
       
       nav.nav-open {
-        right: 0;
+        display: block;
       }
     }
-
-    .wrap {
-      .home {
-
-        h1 {
-          font-size: 4rem;
-          
-          span {
-            margin: 45px auto auto auto;
-          }
-          
-          span:nth-of-type(1) {
-            width: 203px;
-            height: 40px;
-          }
-          
-          span:nth-of-type(2) {
-            width: 203px;
-            height: 40px;
-          }
-          
-          span:nth-of-type(3) {
-            width: 206px;
-            height: 50px;
-          }
-        }
-
-        h3 {
-          width: 245px;
-          height: 21px;
-          font-size: 1.6rem;
-          margin: 35px auto auto auto;
-        }
+  }
+  @media screen and (max-width:768px) {
+    header {
+      .logo_l {
+        display: none;
+      }
+      .logo_s {
+        display: block;
       }
     }
 
@@ -335,7 +341,7 @@ html {
 
          .fb-page {
            display: block;
-           width: 325px;
+           width: 310px;
            height: 432px;
            float: none;
            margin-right: auto;

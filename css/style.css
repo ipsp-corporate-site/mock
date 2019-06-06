@@ -28,6 +28,7 @@ html {
           text-decoration: none;
           color: #68833e; }
   html .wrap {
+    min-height: 500px;
     height: 100vh;
     width: 100vw;
     background-image: url(../images/1853aaf44f70531e12ddef0979b344cd_m.jpg);
@@ -141,11 +142,26 @@ html {
       margin-top: 81px;
       margin-bottom: 36px;
       text-align: center; }
-  @media screen and (max-width: 768px) {
-    html header .logo_l {
-      display: none; }
-    html header .logo_s {
-      display: block; }
+  @media screen and (max-width: 855px) {
+    html .wrap .home h1 {
+      font-size: 4rem; }
+      html .wrap .home h1 span {
+        margin: 45px auto auto auto; }
+      html .wrap .home h1 span:nth-of-type(1) {
+        width: 203px;
+        height: 40px; }
+      html .wrap .home h1 span:nth-of-type(2) {
+        width: 203px;
+        height: 40px; }
+      html .wrap .home h1 span:nth-of-type(3) {
+        width: 206px;
+        height: 50px; }
+    html .wrap .home h3 {
+      width: 245px;
+      height: 21px;
+      font-size: 1.6rem;
+      margin: 35px auto auto auto; } }
+  @media screen and (max-width: 787px) {
     html header .btn-gnavi {
       display: block;
       position: absolute;
@@ -186,12 +202,14 @@ html {
       -webkit-transform: translate(-7px, -17px) rotate(-45deg);
       transform: translate(-7px, -17px) rotate(-45deg); }
     html header nav {
+      display: none;
       position: absolute;
       padding-top: 40px;
       top: -25px;
-      right: -200px;
+      right: 0;
       width: 200px;
       height: 100vh;
+      min-height: 500px;
       background: rgba(33, 33, 33, 0.9);
       font-size: 16px;
       box-sizing: border-box;
@@ -202,25 +220,12 @@ html {
           text-decoration: none;
           color: #ddd; }
     html header nav.nav-open {
-      right: 0; }
-    html .wrap .home h1 {
-      font-size: 4rem; }
-      html .wrap .home h1 span {
-        margin: 45px auto auto auto; }
-      html .wrap .home h1 span:nth-of-type(1) {
-        width: 203px;
-        height: 40px; }
-      html .wrap .home h1 span:nth-of-type(2) {
-        width: 203px;
-        height: 40px; }
-      html .wrap .home h1 span:nth-of-type(3) {
-        width: 206px;
-        height: 50px; }
-    html .wrap .home h3 {
-      width: 245px;
-      height: 21px;
-      font-size: 1.6rem;
-      margin: 35px auto auto auto; }
+      display: block; } }
+  @media screen and (max-width: 768px) {
+    html header .logo_l {
+      display: none; }
+    html header .logo_s {
+      display: block; }
     html footer {
       height: 600px;
       width: 100vw; }
@@ -231,7 +236,7 @@ html {
         margin-left: auto; }
         html footer .outer .fb-page {
           display: block;
-          width: 325px;
+          width: 310px;
           height: 432px;
           float: none;
           margin-right: auto;

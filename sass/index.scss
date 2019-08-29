@@ -41,6 +41,28 @@ html {
       }
     }
   }
+  
+  main {
+    padding-top: 100px;
+    
+    h2{
+      font-size: 3rem;
+      color: #68833e;
+      margin-bottom: 6rem;
+    }
+    
+    p {
+      font-size: 2rem;
+    }
+    
+    &.container {
+      text-align: center;
+      
+      label {
+        text-align: left;
+      }
+    }
+  }
 
   .wrap {
     min-height: 500px;
